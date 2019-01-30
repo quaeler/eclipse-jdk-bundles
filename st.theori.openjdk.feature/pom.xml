@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project
+        xmlns="http://maven.apache.org/POM/4.0.0"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>st.theori.openjdk</groupId>
+        <artifactId>jdk</artifactId>
+        <version>11.0.2.1</version>
+        <relativePath>..</relativePath>
+    </parent>
+
+    <artifactId>st.theori.openjdk.feature</artifactId>
+    <packaging>eclipse-feature</packaging>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jarsigner-plugin</artifactId>
+                <version>${jarsigner.plugin.version}</version>
+                <configuration>
+                    <certchain>${project.basedir}/../certchain.txt</certchain>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

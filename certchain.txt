@@ -1,0 +1,1 @@
+If you wish to sign the jar, populate this file with the certificate chain and set the property "jarsigner.skip" in the top level pom.xml to false.

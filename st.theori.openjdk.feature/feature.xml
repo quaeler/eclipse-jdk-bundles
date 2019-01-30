@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="st.theori.openjdk.feature"
+      label="%Bundle-Name"
+      version="11.0.2.1"
+      provider-name="%Bundle-Vendor">
+
+   <plugin
+         id="st.theori.openjdk.linux.x86_64"
+         version="0.0.0"
+         optional="true"
+         os="linux"
+         arch="x86_64"
+         unpack="true"/>
+
+   <plugin
+         id="st.theori.openjdk.macosx.x86_64"
+         version="0.0.0"
+         optional="true"
+         os="macosx"
+         arch="x86_64"
+         unpack="true"/>
+
+   <plugin
+         id="st.theori.openjdk.win32.x86_64"
+         version="0.0.0"
+         optional="true"
+         os="win32"
+         arch="x86_64"
+         unpack="true"/>
+
+</feature>
