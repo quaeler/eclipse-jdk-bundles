@@ -8,7 +8,7 @@
 	<parent>
 		<groupId>st.theori.openjdk</groupId>
 		<artifactId>bundles</artifactId>
-		<version>11.0.2.1</version>
+		<version>11.0.2.2</version>
 		<relativePath>..</relativePath>
 	</parent>
 

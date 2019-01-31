@@ -1,9 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feature
       id="st.theori.openjdk.feature"
-      label="%Bundle-Name"
-      version="11.0.2.1"
-      provider-name="%Bundle-Vendor">
+      label="OpenJDK JVM"
+      version="11.0.2.2"
+      provider-name="Microsoft Research, Oracle, loki der quaeler">
+
+   <description url="http://theori.st/eclipse/openjdk/4.9">
+      OpenJDK JVM provides a platform specific (Linux, Mac, Windows for x86_64) feature and p2 touchpoint instruction for installing a JVM into the underlying RCP.
+   </description>
+
+   <url>
+      <update label="OpenJDK JVM update site" url="http://theori.st/eclipse/openjdk/4.9"/>
+   </url>
 
    <plugin
          id="st.theori.openjdk.linux.x86_64"
