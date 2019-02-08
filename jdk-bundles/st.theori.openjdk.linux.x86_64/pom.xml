@@ -8,7 +8,7 @@
 	<parent>
 		<groupId>st.theori.openjdk</groupId>
 		<artifactId>bundles</artifactId>
-		<version>11.0.2.8</version>
+		<version>11.0.2.9</version>
 		<relativePath>..</relativePath>
 	</parent>
 
@@ -16,7 +16,12 @@
 	<packaging>eclipse-plugin</packaging>
 
 	<properties>
-		<download.filePostfix>linux-x64_bin.tar.gz</download.filePostfix>
+<!--		OpenJDK:
+ 		<download.filePostfix>linux-x64_bin.tar.gz</download.filePostfix>
+
+ 			AdoptOpenJDK:
+ -->		
+		<download.filePostfix>linux_hotspot_11.0.2_9.tar.gz</download.filePostfix>
 	</properties>
 
 	<build>
