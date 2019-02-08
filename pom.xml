@@ -11,7 +11,7 @@
 
 	<groupId>st.theori.openjdk</groupId>
 	<artifactId>jdk</artifactId>
-	<version>11.0.2.8</version>
+	<version>11.0.2.9</version>
 	<packaging>pom</packaging>
 
 	<name>Bundled Oracle Java JDK</name>

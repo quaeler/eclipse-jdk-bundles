@@ -8,7 +8,7 @@
 	<parent>
 		<groupId>st.theori.openjdk</groupId>
 		<artifactId>jdk</artifactId>
-		<version>11.0.2.8</version>
+		<version>11.0.2.9</version>
 		<relativePath>..</relativePath>
 	</parent>
 
@@ -16,13 +16,22 @@
 	<packaging>pom</packaging>
 
 	<properties>
- 		<download.url>https://download.java.net/java/GA/jdk11/9/GPL/</download.url>
 	<!-- to test locally, place files in a local directory
+ 		<download.url>https://download.java.net/java/GA/jdk11/9/GPL/</download.url>
+ 		<download.url>https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.2%2B9/</download.url>
 		<download.url>file:///Users/loki/Downloads/openjdk/</download.url>
+		<download.url>file:///Users/loki/Downloads/adopt_openjdk/</download.url>
 	-->
+		<download.url>file:///Users/loki/Downloads/adopt_openjdk/</download.url>
 
-		<download.file>openjdk-11.0.2_</download.file>
+<!--		OpenJDK:
+ 		<download.file>openjdk-11.0.2_</download.file>
 		<download.unzippedFolder>jdk-11.0.2</download.unzippedFolder>
+
+			AdoptOpenJDK:
+ -->
+		<download.file>OpenJDK11U-jre_x64_</download.file>
+		<download.unzippedFolder>jdk-11.0.2+9-jre</download.unzippedFolder>
 
 		<!-- sub-pom MUST override this -->
 		<download.filePostfix>os_arch.zip</download.filePostfix>
@@ -56,7 +65,7 @@
 				<artifactId>exec-maven-plugin</artifactId>
 				<executions>
 					<execution>
-						<id>Downloading from OpenJDK: ${download.file}${download.filePostfix}</id>
+						<id>Downloading JVM package: ${download.file}${download.filePostfix}</id>
 						<phase>process-resources</phase>
 						<goals>
 							<goal>exec</goal>

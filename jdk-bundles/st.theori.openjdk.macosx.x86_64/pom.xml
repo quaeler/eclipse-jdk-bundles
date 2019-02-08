@@ -8,7 +8,7 @@
 	<parent>
 		<groupId>st.theori.openjdk</groupId>
 		<artifactId>bundles</artifactId>
-		<version>11.0.2.8</version>
+		<version>11.0.2.9</version>
 		<relativePath>..</relativePath>
 	</parent>
 
@@ -16,8 +16,14 @@
 	<packaging>eclipse-plugin</packaging>
 
 	<properties>
-		<download.filePostfix>osx-x64_bin.tar.gz</download.filePostfix>
+<!--		OpenJDK:
+ 		<download.filePostfix>osx-x64_bin.tar.gz</download.filePostfix>
 		<download.unzippedFolderPostfix>.jdk/Contents/Home</download.unzippedFolderPostfix>
+
+			AdoptOpenJDK:
+ -->		
+		<download.filePostfix>mac_hotspot_11.0.2_9.tar.gz</download.filePostfix>
+		<download.unzippedFolderPostfix>/Contents/Home</download.unzippedFolderPostfix>
 		<jre.folder>Contents/Home</jre.folder>
 	</properties>
 
