@@ -1,0 +1,22 @@
+<project
+        xmlns="http://maven.apache.org/POM/4.0.0"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>org.lamport.openjdk</groupId>
+        <artifactId>jdk</artifactId>
+        <version>11.0.2.9</version>
+        <relativePath>..</relativePath>
+    </parent>
+
+    <artifactId>org.lamport.openjdk.p2repository</artifactId>
+    <packaging>eclipse-repository</packaging>
+
+    <properties>
+        <skipDeployment>false</skipDeployment>
+        <skip-signing>true</skip-signing>
+    </properties>
+
+</project>
