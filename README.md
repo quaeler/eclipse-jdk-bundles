@@ -1,8 +1,22 @@
 # eclipse-jdk-bundles
-Eclipse features for wrapping Linux, Mac, and Windows OpenJDK binaries
 
-The included maven build structure produces Eclipse bundles and accompanying feature wrapping the OpenJDK binaries for use in RCP applications via p2 touchpoint instructions; the current master tip is configured to wrap OpenJDK 11.0.2
+&hellip; for producing Eclipse features for wrapping Linux, Mac, and Windows x64 OpenJDK binaries
 
+The included maven build structure produces Eclipse bundles and accompanying feature wrapping the OpenJDK binaries for use in RCP applications via p2 touchpoint instructions; the current master tip is configured to wrap OpenJDK 11.0.2 JRE taken from [AdoptOpenJDK](https://www.adoptopenjdk.com/) - though i have left the POMs with commented out elements to easily switch over to using the 'official' OpenJDK JDK (there is, as of this writing, no download for a Java 11 JRE.)
+
+## Building
+
+The build process can either fetch the JRE/JVM from the remote site, or can reference a local (or mounted) filesystem location. If you're experimenting and looking to do the internet a favor, you could download the Linux, macOS, and Windows x64 gtar and zip balls once and place them in a local directory, appropriately [configuring the POM with the directory location.](jdk-bundles/pom.xml#L19) Also please note that the POMs in jdk-bundles and under are presently configured for the 11.0.2 release; variables need be updated when building for a different release.
+
+Once appropriate version has been set (see the following section) the build can be done with the usual package target, with clean thrown in for good measure as:
+```
+mvn clean package
+```
+
+This will produce, in `update-site/target` both a p2 repository in the directory named `repository` and a zip-ed version of the p2 repository named, varying on the version number set, `st.theori.openjdk.updatesite-11.0.2.9.zip`
+
+
+## Versioning
 
 Updating the features version can be performed in this fashion (assuming the current version is 11.0.2.1, and presuming the versioning is done to reflect a feature update wrapping a dot-dot-dot update to 11.0.2)
 ```
