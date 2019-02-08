@@ -2,7 +2,7 @@
 
 &hellip; for producing Eclipse features for wrapping Linux, Mac, and Windows x64 OpenJDK binaries
 
-The included maven build structure produces Eclipse bundles and accompanying feature wrapping the OpenJDK binaries for use in RCP applications via p2 touchpoint instructions; the current master tip is configured to wrap OpenJDK 11.0.2 JRE taken from [AdoptOpenJDK](https://www.adoptopenjdk.com/) - though i have left the POMs with commented out elements to easily switch over to using the 'official' OpenJDK JDK (there is, as of this writing, no download for a Java 11 JRE.)
+The included maven build structure produces Eclipse bundles and accompanying feature wrapping the OpenJDK binaries for use in RCP applications via p2 touchpoint instructions; the current master tip is configured to wrap OpenJDK 11.0.2 JRE taken from [AdoptOpenJDK](https://adoptopenjdk.net/) - though i have left the POMs with commented out elements to easily switch over to using the 'official' OpenJDK JDK (there is, as of this writing, no download for a Java 11 JRE.)
 
 ## Building
 
