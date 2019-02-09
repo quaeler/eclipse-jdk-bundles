@@ -13,7 +13,7 @@ Once appropriate version has been set (see the following section) the build can 
 mvn clean package
 ```
 
-This will produce, in `update-site/target` both a p2 repository in the directory named `repository` and a zip-ed version of the p2 repository named, varying on the version number set, `st.theori.openjdk.updatesite-11.0.2.9.zip`
+This will produce, in `update-site/target` both a p2 repository in the directory named `repository` and a zip-ed version of the p2 repository named, varying on the version number set, `org.lamport.openjdk.updatesite-11.0.2.9.zip`
 
 
 ## Versioning

@@ -1,9 +1,0 @@
-instructions.configure = \
-  org.eclipse.equinox.p2.touchpoint.eclipse.setJvm(jvm:plugins/st.theori.openjdk.linux.x86_64_${version}/jre/bin);
-
-instructions.unconfigure = \
-  org.eclipse.equinox.p2.touchpoint.eclipse.setJvm(jvm:null);
-
-instructions.install = \
-  org.eclipse.equinox.p2.touchpoint.eclipse.chmod(targetDir:@artifact,targetFile:jre/bin,permissions:755,options:-R);\
-  org.eclipse.equinox.p2.touchpoint.eclipse.chmod(targetDir:@artifact,targetFile:jre/lib/jexec,permissions:755);
