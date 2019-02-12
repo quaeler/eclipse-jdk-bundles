@@ -2,7 +2,7 @@
 <feature
       id="st.theori.openjdk.feature"
       label="OpenJDK JVM"
-      version="11.0.2.9"
+      version="11.0.2.12"
       provider-name="Microsoft Research, Oracle, loki der quaeler">
 
    <description url="http://theori.st/eclipse/openjdk/4.9">

@@ -8,7 +8,7 @@
 	<parent>
 		<groupId>st.theori.openjdk</groupId>
 		<artifactId>bundles</artifactId>
-		<version>11.0.2.9</version>
+		<version>11.0.2.12</version>
 		<relativePath>..</relativePath>
 	</parent>
 
@@ -24,7 +24,9 @@
  -->		
 		<download.filePostfix>mac_hotspot_11.0.2_9.tar.gz</download.filePostfix>
 		<download.unzippedFolderPostfix>/Contents/Home</download.unzippedFolderPostfix>
+		<download.additionalContent>Contents/MacOS</download.additionalContent>
 		<jre.folder>Contents/Home</jre.folder>
+		<additional.jdk.folder>Contents/MacOS/**</additional.jdk.folder>
 	</properties>
 
 	<build>
@@ -45,8 +47,8 @@
 				</configuration>
 			</plugin>
 			<plugin>
-				<groupId>org.codehaus.mojo</groupId>
-				<artifactId>exec-maven-plugin</artifactId>
+				<groupId>com.googlecode.maven-download-plugin</groupId>
+				<artifactId>download-maven-plugin</artifactId>
 			</plugin>
 			<plugin>
 				<artifactId>maven-antrun-plugin</artifactId>
