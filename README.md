@@ -23,16 +23,6 @@ Updating the features version can be performed in this fashion (assuming the cur
 mvn org.eclipse.tycho:tycho-versions-plugin:1.0.0:set-version -DnewVersion=11.0.2.2
 ```
 
-
-## Problems involving RCPTT, macOS, and Eclipse
-
-Due to the [code check here](https://github.com/xored/rcptt/blob/a37c7c109ee5659b909797b32ed8e252d9f9a387/runner/org.eclipse.rcptt.runner/src/org/eclipse/rcptt/runner/util/AUTsManager.java#L179) which looks to make sure, for reasons unclear, that the parent directory of the JVM executable is named `bin` RCPTT concludes that the macOS feature is invalid (as the parent directory is `lib`) issuing a logging message of the form `[INFO] Unknown file system layout of Java VM from ini file.` This is due to the requirement that the Eclipse `-vm` reference point, on macOS, to a dynamic library and not the `java` executable itself - why this is so: unknown.
-
-Chasing the rabbit down the hole, we could get around this by soft linking the dynamic library to the `bin` directory; if we copy it, the VM will not initialize properly. We can achieve this soft-linking through a touchpoint instruction.
-
-Unfortunately, the touchpoint instruction for linking does not observe the touchpoint global variable `@artifact` which the Eclipse Target Definition resolver understands, it only observes the variable `${installFolder}` while the Eclipse resolver cannot handle correctly.
-
-
 ## Credit
 
 This work would have taken incredibly longer to arrive without the massive launching point provided by, and of whose works this is largely derivative, [Andreas Buchen.](https://github.com/buchen/bundled-jre)

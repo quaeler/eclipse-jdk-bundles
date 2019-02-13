@@ -1,5 +1,5 @@
 instructions.configure = \
-  org.eclipse.equinox.p2.touchpoint.eclipse.setJvm(jvm:../Eclipse/plugins/org.lamport.openjdk.macosx.x86_64_${version}/Contents/Home/lib/jli/libjli.dylib);
+  org.eclipse.equinox.p2.touchpoint.eclipse.setJvm(jvm:../Eclipse/plugins/org.lamport.openjdk.macosx.x86_64_${version}/Contents/Home/bin/java);
 
 instructions.unconfigure = \
   org.eclipse.equinox.p2.touchpoint.eclipse.setJvm(jvm:null);
@@ -7,3 +7,4 @@ instructions.unconfigure = \
 instructions.install = \
   org.eclipse.equinox.p2.touchpoint.eclipse.chmod(targetDir:@artifact,targetFile:Contents/Home/bin,permissions:755,options:-R);\
   org.eclipse.equinox.p2.touchpoint.eclipse.chmod(targetDir:@artifact,targetFile:Contents/Home/lib/jspawnhelper,permissions:755);\
+  org.eclipse.equinox.p2.touchpoint.eclipse.ln(targetDir:@artifact,linkName:Contents/MacOS/libjli.dylib,linkTarget:../Home/lib/jli/libjli.dylib,force:true);

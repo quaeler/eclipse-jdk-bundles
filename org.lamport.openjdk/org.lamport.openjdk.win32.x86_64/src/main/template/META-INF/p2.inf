@@ -1,5 +1,5 @@
 instructions.configure = \
-  org.eclipse.equinox.p2.touchpoint.eclipse.setJvm(jvm:plugins/org.lamport.openjdk.win32.x86_64_${version}/jre/bin/java.exe);
+  org.eclipse.equinox.p2.touchpoint.eclipse.setJvm(jvm:plugins/org.lamport.openjdk.win32.x86_64_${version}/jre/bin/javaw.exe);
 
 instructions.unconfigure = \
   org.eclipse.equinox.p2.touchpoint.eclipse.setJvm(jvm:null);
