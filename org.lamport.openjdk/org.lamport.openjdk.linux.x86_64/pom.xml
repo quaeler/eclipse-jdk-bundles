@@ -8,7 +8,7 @@
 	<parent>
 		<groupId>org.lamport.openjdk</groupId>
 		<artifactId>org.lamport.openjdk</artifactId>
-		<version>11.0.2.9</version>
+		<version>13.0.1.2</version>
 		<relativePath>..</relativePath>
 	</parent>
 
@@ -20,8 +20,8 @@
  		<download.filePostfix>linux-x64_bin.tar.gz</download.filePostfix>
 
  			AdoptOpenJDK:
- -->		
-		<download.filePostfix>linux_hotspot_11.0.2_9.tar.gz</download.filePostfix>
+ -->
+		<download.filePostfix>linux_hotspot_13.0.1_9.tar.gz</download.filePostfix>
 	</properties>
 
 	<build>

@@ -2,15 +2,15 @@
 <feature
       id="org.lamport.openjdk.feature"
       label="OpenJDK JVM"
-      version="11.0.2.9"
+      version="13.0.1.2"
       provider-name="Microsoft Research, Oracle, loki der quaeler">
 
-   <description url="http://theori.st/eclipse/openjdk/4.9">
+   <description url="http://lemmy.github.com/eclipse-jdk-bundles/">
       OpenJDK JVM provides a platform specific (Linux, Mac, Windows for x86_64) feature and p2 touchpoint instruction for installing a JVM into the underlying RCP.
    </description>
 
    <url>
-      <update label="OpenJDK JVM update site" url="http://theori.st/eclipse/openjdk/4.9"/>
+      <update label="OpenJDK JVM update site" url="http://lemmy.github.com/eclipse-jdk-bundles/"/>
    </url>
 
    <plugin

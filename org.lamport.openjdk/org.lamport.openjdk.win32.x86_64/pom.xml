@@ -8,7 +8,7 @@
 	<parent>
 		<groupId>org.lamport.openjdk</groupId>
 		<artifactId>org.lamport.openjdk</artifactId>
-		<version>11.0.2.9</version>
+		<version>13.0.1.2</version>
 		<relativePath>..</relativePath>
 	</parent>
 
@@ -16,12 +16,12 @@
 	<packaging>eclipse-plugin</packaging>
 
 	<properties>
-<!-- 		OpenJDK:	
+<!-- 		OpenJDK:
 		<download.filePostfix>windows-x64_bin.zip</download.filePostfix>
 
 			AdoptOpenJDK:
  -->
-		<download.filePostfix>windows_hotspot_11.0.2_9.zip</download.filePostfix>
+		<download.filePostfix>windows_hotspot_13.0.1_9.zip</download.filePostfix>
 		<download.type>zip</download.type>
 	</properties>
 

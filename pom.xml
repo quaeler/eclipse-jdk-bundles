@@ -11,7 +11,7 @@
 
 	<groupId>org.lamport.openjdk</groupId>
 	<artifactId>jdk</artifactId>
-	<version>11.0.2.9</version>
+	<version>13.0.1.2</version>
 	<packaging>pom</packaging>
 
 	<name>Bundled OpenJDK</name>
@@ -34,7 +34,7 @@
 		<repository>
 			<id>eclipse</id>
 			<layout>p2</layout>
-<!-- 
+<!--
 			<url>http://download.eclipse.org/eclipse/updates/4.10/R-4.10-201812060815</url>
  -->
 			<url>http://download.eclipse.org/eclipse/updates/4.9/R-4.9-201809060745</url>

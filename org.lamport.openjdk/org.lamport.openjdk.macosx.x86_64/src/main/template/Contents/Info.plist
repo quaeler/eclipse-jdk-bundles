@@ -13,7 +13,7 @@
                 <key>CFBundleInfoDictionaryVersion</key>
                 <string>7.0</string>
                 <key>CFBundleName</key>
-                <string>OpenJDK 11</string>
+                <string>OpenJDK 13</string>
                 <key>CFBundlePackageType</key>
                 <string>BNDL</string>
                 <key>CFBundleShortVersionString</key>
@@ -33,7 +33,7 @@
                         <key>JVMMinimumSystemVersion</key>
                         <string>10.6.0</string>
                         <key>JVMPlatformVersion</key>
-                        <string>11.0</string>
+                        <string>13.0</string>
                         <key>JVMVendor</key>
                         <string>UNDEFINED</string>
                         <key>JVMVersion</key>

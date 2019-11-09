@@ -8,7 +8,7 @@
 	<parent>
 		<groupId>org.lamport.openjdk</groupId>
 		<artifactId>jdk</artifactId>
-		<version>11.0.2.9</version>
+		<version>13.0.1.2</version>
 		<relativePath>..</relativePath>
 	</parent>
 
@@ -18,11 +18,10 @@
 	<properties>
 	<!-- to test locally, place files in a local directory
  		<download.url>https://download.java.net/java/GA/jdk11/9/GPL/</download.url>
- 		<download.url>https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.2%2B9/</download.url>
 		<download.url>file:///Users/loki/Downloads/openjdk/</download.url>
 		<download.url>file:///Users/loki/Downloads/adopt_openjdk/</download.url>
 	-->
- 		<download.url>https://github.com/AdoptOpenJDK/openjdk11-binaries/releases/download/jdk-11.0.2%2B9/</download.url>
+	<download.url>https://github.com/AdoptOpenJDK/openjdk13-binaries/releases/download/jdk-13.0.1%2B9/</download.url>
 
 <!--		OpenJDK:
  		<download.file>openjdk-11.0.2_</download.file>
@@ -30,8 +29,8 @@
 
 			AdoptOpenJDK:
  -->
-		<download.file>OpenJDK11U-jre_x64_</download.file>
-		<download.unzippedFolder>jdk-11.0.2+9-jre</download.unzippedFolder>
+		<download.file>OpenJDK13U-jre_x64_</download.file>
+		<download.unzippedFolder>jdk-13.0.1+9-jre</download.unzippedFolder>
 
 		<!-- sub-pom MUST override this -->
 		<download.filePostfix>os_arch.zip</download.filePostfix>
@@ -94,7 +93,7 @@
 								<target>
 									<echo message="Unzip: ${download.file}${download.filePostfix}"/>
 									<ac:if xmlns:ac="antlib:net.sf.antcontrib">
-										<equals arg1="${download.type}" arg2="gzip"/> 
+										<equals arg1="${download.type}" arg2="gzip"/>
 										<then>
 											<untar compression="gzip" dest="${project.build.directory}/downloads/" src="${project.build.directory}/${download.file}${download.filePostfix}"/>
 										</then>
@@ -104,7 +103,7 @@
 									</ac:if>
 									<move file="${project.build.directory}/downloads/${download.unzippedFolder}${download.unzippedFolderPostfix}" tofile="${project.build.directory}/downloads/${jre.folder}"/>
 									<ac:if xmlns:ac="antlib:net.sf.antcontrib">
-										<isset property="download.additionalContent"/> 
+										<isset property="download.additionalContent"/>
 										<then>
 											<move file="${project.build.directory}/downloads/${download.unzippedFolder}/${download.additionalContent}" tofile="${project.build.directory}/downloads/${download.additionalContent}"/>
 										</then>
