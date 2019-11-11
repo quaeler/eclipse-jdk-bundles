@@ -2,7 +2,7 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: OpenJDK Windows x86_64 JVM
 Bundle-SymbolicName: org.lamport.openjdk.win32.x86_64;singleton:=true
-Bundle-Version: 13.0.1.2
+Bundle-Version: 13.0.1.3
 Bundle-Vendor: Microsoft Research, Oracle, loki der quaeler
 Eclipse-PlatformFilter: (& (osgi.os=win32) (osgi.arch=x86_64))
 Eclipse-BundleShape: dir

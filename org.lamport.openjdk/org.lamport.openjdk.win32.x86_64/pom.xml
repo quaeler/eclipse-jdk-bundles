@@ -8,7 +8,7 @@
 	<parent>
 		<groupId>org.lamport.openjdk</groupId>
 		<artifactId>org.lamport.openjdk</artifactId>
-		<version>13.0.1.2</version>
+		<version>13.0.1.3</version>
 		<relativePath>..</relativePath>
 	</parent>
 

@@ -6,4 +6,5 @@ instructions.unconfigure = \
 
 instructions.install = \
   org.eclipse.equinox.p2.touchpoint.eclipse.chmod(targetDir:@artifact,targetFile:jre/bin,permissions:755,options:-R);\
+  org.eclipse.equinox.p2.touchpoint.eclipse.chmod(targetDir:@artifact,targetFile:jre/lib/jspawnhelper,permissions:755);\
   org.eclipse.equinox.p2.touchpoint.eclipse.chmod(targetDir:@artifact,targetFile:jre/lib/jexec,permissions:755);
